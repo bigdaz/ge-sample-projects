@@ -1,0 +1,13 @@
+plugins {
+  id "com.gradle.enterprise" version "3.10"
+}
+
+rootProject.name = 'gradle-sample'
+
+gradleEnterprise {
+  server = "https://ge.solutions-team.gradle.com"
+
+  buildScan {
+    publishAlways()
+  }
+}
